@@ -1,0 +1,28 @@
+{
+  "name": "mateuzus/carrinho_compras",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mateus",
+      "email": "mateusdsmarcelino@gmail.com",
+      "role": "Developer",
+      "homepage": "https://github.com/mateuzus"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Config.php"
+    ]
+  },
+  "require": {
+    "phpmailer/phpmailer": "v6.0.0"
+  }
+}

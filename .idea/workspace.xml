@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1977e82a-5377-4a7f-9cae-0a2a1ae8942e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <phar pharPath="C:\xampp\htdocs\carrinho_compras\composer.phar" interpreterId="cbe8a219-70d2-400a-9973-32518265d804" />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="composer.json" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1kkYlek5DoC2ag9OZIqAhTM1Ocs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1977e82a-5377-4a7f-9cae-0a2a1ae8942e" name="Default Changelist" comment="" />
+      <created>1606246222471</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606246222471</updated>
+      <workItem from="1606246230729" duration="2635000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="459" y="281" width="447" height="265" key="ComposerInitDialogKey" timestamp="1606246435843">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="459" y="281" width="447" height="265" key="ComposerInitDialogKey/0.0.1366.738@0.0.1366.738" timestamp="1606246435843" />
+    <state x="462" y="155" key="FileChooserDialogImpl" timestamp="1606246427304">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="462" y="155" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1606246427304" />
+    <state x="517" y="292" key="NewPhpFileDialog" timestamp="1606246895997">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="517" y="292" key="NewPhpFileDialog/0.0.1366.738@0.0.1366.738" timestamp="1606246895997" />
+  </component>
+</project>
