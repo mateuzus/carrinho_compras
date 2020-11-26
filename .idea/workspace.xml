@@ -20,16 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1977e82a-5377-4a7f-9cae-0a2a1ae8942e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controller/clientes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/produtos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/Carrinho.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/Clientes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/Config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/Produtos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Rotas.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Rotas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/compile/cba9452ed531ae3f5a2e597f7db685f8f20d9eb8_0.file.index.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/compile/cba9452ed531ae3f5a2e597f7db685f8f20d9eb8_0.file.index.tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/index.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +71,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\carrinho_compras\view\tema" />
+      <recent name="C:\xampp\htdocs\carrinho_compras\view" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -91,6 +92,8 @@
       <workItem from="1606348101357" duration="1152000" />
       <workItem from="1606349431081" duration="6577000" />
       <workItem from="1606400635784" duration="4840000" />
+      <workItem from="1606415462657" duration="433000" />
+      <workItem from="1606415939034" duration="6789000" />
     </task>
     <task id="LOCAL-00001" summary="testando url">
       <created>1606358804110</created>

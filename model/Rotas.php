@@ -6,6 +6,7 @@ class Rotas
     public static $pag;
     private static $pasta_controller = 'controller';
     private static $pasta_view = 'view';
+    private static $pasta_tema = 'tema';
 
      static function get_SiteHOME(){
         return Config::SITE_URL . '/' . Config::SITE_FOLDER;
@@ -16,7 +17,11 @@ class Rotas
     }
 
     static function get_SiteTEMA(){
-         return self::get_SiteHOME() . '/' . self::$pasta_view;
+         return self::get_SiteHOME() . '/' . self::$pasta_view . '/' . self::$pasta_tema;
+    }
+
+    static function pag_Carrinho(){
+        return self::get_SiteHOME() . '/carrinho';
     }
 
 static function get_Pagina(){

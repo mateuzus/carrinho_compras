@@ -1,10 +1,618 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>teste</title>
+    <meta charset="UTF-8">
+    <title>Loja do Marcelino</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--enable mobile device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--fontawesome css-->
+    <link rel="stylesheet" href="{$GET_TEMA}/css/font-awesome.min.css">
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="{$GET_TEMA}/css/bootstrap.min.css">
+    <!--animate css-->
+    <link rel="stylesheet" href="{$GET_TEMA}/css/animate-wow.css">
+    <!--main css-->
+    <link rel="stylesheet" href="{$GET_TEMA}/css/style.css">
+    <link rel="stylesheet" href="{$GET_TEMA}/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="{$GET_TEMA}/css/slick.min.css">
+    <!--responsive css-->
+    <link rel="stylesheet" href="{$GET_TEMA}/css/responsive.css">
 </head>
 <body>
-Está é a página carregada com o Smarty
-<h2>{$Nome}</h2>
+<header id="header" class="top-head">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 left-rs">
+                    <div class="navbar-header">
+                        <button type="button" id="top-menu" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="tema/index.html" class="navbar-brand"><img src="{$GET_TEMA}/images/logo.png" alt="" /></a>
+                    </div>
+                    <form class="navbar-form navbar-left web-sh">
+                        <div class="form">
+                            <input type="text" class="form-control" placeholder="Procure por produtos ou empresas">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                    <div class="right-nav">
+                        <div class="login-sr">
+                            <div class="login-signup">
+                                <ul>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a class="custom-b" href="#">Cadastre-se</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="help-r hidden-xs">
+                            <div class="help-box">
+                                <ul>
+                                    <li> <a data-toggle="modal" data-target="#myModal" href="#"> <span>Mudar idioma</span> <img src="images/flag.png" alt="" /> </a> </li>
+                                    <li> <a href="#"><img class="h-i" src="{$GET_TEMA}/images/help-icon.png" alt="" /> Ajuda </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav-b hidden-xs">
+                            <div class="nav-box">
+                                <ul>
+                                    <li><a href="{$GET_TEMA}/howitworks.html">Como funciona</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.container-fluid -->
+    </nav>
+</header>
+<!-- Modal -->
+<div class="modal fade lug" id="myModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Change</h4>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li><a href="#"><img src="{$GET_TEMA}/images/flag-up-1.png" alt="" /> Estados Unidos</a></li>
+                    <li><a href="#"><img src="{$GET_TEMA}/images/flag-up-2.png" alt="" /> França </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="sidebar" class="top-nav">
+    <ul id="sidebar-nav" class="sidebar-nav">
+        <li><a href="#">Ajuda</a></li>
+        <li><a href="{$GET_TEMA}/howitworks.html">Como funciona</a></li>
+
+    </ul>
+</div>
+<div class="page-content-product">
+    <div class="main-product">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="find-box">
+                    <h1>Encontre seu próximo negócio ou parceiro de negócios aqui.</h1>
+                    <h4>Nunca foi tão fácil.</h4>
+                    <div class="product-sh">
+                        <div class="col-sm-6">
+                            <div class="form-sh">
+                                <input type="text" placeholder="Procure algo que você ame" >
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-sh">
+                                <select class="selectpicker">
+                                    <option>Têxteis</option>
+                                    <option>Mobília</option>
+                                    <option>Couro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-sh"> <a class="btn" href="#">Pesquisar</a> </div>
+                        </div>
+                        <p>Ou simplesmente<a href="#"> clique aqui </a> e inspire-se!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col-lg-3 col-sm-6 col-md-3">
+                    <a href="{$GET_TEMA}/tema/produtos.html">
+                        <div class="box-img">
+                            <h4>Produto</h4>
+                            <img src={$GET_TEMA}/"images/product/1.png" alt="" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-3">
+                    <a href="tema/produtos.html">
+                        <div class="box-img">
+                            <h4>Produto</h4>
+                            <img src="{$GET_TEMA}/images/product/2.png" alt="" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-3">
+                    <a href="{$GET_TEMA}/tema/produtos.html">
+                        <div class="box-img">
+                            <h4>Produto</h4>
+                            <img src="{$GET_TEMA}/images/product/4.png" alt="" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-3">
+                    <a href="{$GET_TEMA}/tema/produtos.html">
+                        <div class="box-img">
+                            <h4>Produto</h4>
+                            <img src="{$GET_TEMA}/images/product/5.png" alt="" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-3">
+                    <a href="{$GET_TEMA}/tema/produtos.html">
+                        <div class="box-img">
+                            <h4>Produto</h4>
+                            <img src="{$GET_TEMA}/images/product/10.png" alt="" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-3">
+                    <a href="{$GET_TEMA}/tema/produtos.html">
+                        <div class="box-img">
+                            <h4>Produto</h4>
+                            <img src="{$GET_TEMA}/images/product/11.png" alt="" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-3">
+                    <a href="{$GET_TEMA}/tema/produtos.html">
+                        <div class="box-img">
+                            <h4>Produto</h4>
+                            <img src="{$GET_TEMA}/images/product/12.png" alt="" />
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-md-3">
+                    <a href="{$GET_TEMA}/tema/produtos.html">
+                        <div class="box-img">
+                            <h4>Produto</h4>
+                            <img src="{$GET_TEMA}/images/product/13.png" alt="" />
+                        </div>
+                    </a>
+                </div>
+                <div class="categories_link">
+                    <a href="#">Navegue por todas as categorias aqui</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cat-main-box">
+    <div class="container">
+        <div class="row panel-row">
+            <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.0s">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img src="{$GET_TEMA}/images/xpann-icon.jpg" class="icon-small" alt="">
+                        <h4>“Marcelino” Seu Negócio</h4>
+                        <p>Cresça facilmente. Crie uma conta gratuita.
+                            Nós ajudamos a expandir seus negócios facilmente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img src="{$GET_TEMA}/images/create-icon.jpg" class="icon-small" alt="">
+                        <h4>Criar e adicionar</h4>
+                        <p>Cresce facilmente com o chamb. Crie uma conta gratuita.
+                            Nós ajudamos a expandir seus negócios facilmente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 wow fadeIn hidden-sm" data-wow-delay="0.4s">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <img src="{$GET_TEMA}/images/get-icon.jpg" class="icon-small" alt="">
+                        <h4>Inspire-se</h4>
+                        <p>Cresce facilmente com o chamb. Crie uma conta gratuita.
+                            Nós ajudamos a expandir seus negócios facilmente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="products_exciting_box">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                <div class="exciting_box f_pd">
+                    <img src="{$GET_TEMA}/images/exciting_img-01.jpg" class="icon-small" alt="" />
+                    <h4>Explorar <strong>emocionante</strong> e produtos exóticos
+                        sob medida para você.
+                    </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris..
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                <div class="exciting_box l_pd">
+                    <img src="{$GET_TEMA}/images/exciting_img-02.jpg" class="icon-small" alt="" />
+                    <h4><strong>Liste seus produtos no</strong> Marcelino e aumentar as conexões.</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris..
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="start-free-box">
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <div class="main-start-box">
+                    <div class="free-box-a clearfix">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="left-a-f">
+                                <h3>Uma plataforma construída para escala e expansão. Comece de graça.</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="right-a-f">
+                                <p>Com o passar dos anos, a maneira como os negócios passaram pela web
+                                    mudarão rapidamente - e Marcelino é o
+                                    quebra-jogo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="main-start-box">
+                <div class="bg_img_left"><img src="{$GET_TEMA}/images/bg_img1.png" alt="#" /></div>
+                <div class="container">
+                    <div class="buyer-box clearfix">
+                        <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                            <div class="left-buyer">
+                                <img class="img-responsive" src="{$GET_TEMA}/images/creat_pro.png" alt="#" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="right-buyer">
+                                <h4>comprador</h4>
+                                <h2>Capacite sua fábrica<br>
+                                    <span>Com um novo canal principal</span>
+                                </h2>
+                                <p>Nunca se preocupe com vendas ou receitas provenientes do exterior.
+                                    com o Marcelino sua loja fica diretamente
+                                    conectado a milhares de interessados em seu
+                                    produtos.
+                                </p>
+                                <a href="#">Crie uma conta de comprador</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="bg_img_right"><img src="{$GET_TEMA}/images/bg_img1.png" alt="#" /></div>
+            <div class="main-start-box">
+                <div class="container">
+                    <div class="supplier clearfix">
+                        <div class="col-md-5 col-sm-6">
+                            <div class="left-supplier">
+                                <h4>fornecedor</h4>
+                                <h2>Expanda sua loja<br><span>Com um novo canal de vendas</span></h2>
+                                <p>Nunca se preocupe com vendas ou receitas provenientes do exterior.
+                                    com o Marcelino sua loja fica diretamente
+                                    conectado a milhares de interessados em seu
+                                    produtos.
+                                </p>
+                                .
+                                <a href="#">Crie uma conta de fornecedor</a>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-6">
+                            <div class="right-supplier">
+                                <img class="{$GET_TEMA}/img-responsive" src="images/supplier-pc-img.png" alt="#" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="products">
+    <div class="main-products">
+        <h2>TENDÊNCIAS DE PRODUTOS NO CHAMB</h2>
+        <div class="product-slidr">
+            <div class="slider">
+                <div>
+                    <div class="prod-box">
+                        <div class="prod-i">
+                            <img src="{$GET_TEMA}/images/tr1.png" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                            <div class="dit-t clearfix">
+                                <div class="left-ti">
+                                    <h4>Mesa com Luzes</h4>
+                                    <p>Por <span>Beko</span> sob <span>Luzes</span></p>
+                                </div>
+                                <a href="#">R$1.220</a>
+                            </div>
+                            <div class="dit-btn clearfix">
+                                <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Salvar na lista de desejos </a>
+                                <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Como isso</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="prod-box">
+                        <div class="prod-i">
+                            <img src="{$GET_TEMA}/images/tr2.png" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                            <div class="dit-t clearfix">
+                                <div class="left-ti">
+                                    <h4>Cama na casa da árvore</h4>
+                                    <p>Por <span>Beko</span> sob <span>Luzes</span></p>
+                                </div>
+                                <a href="#">R$1.220</a>
+                            </div>
+                            <div class="dit-btn clearfix">
+                                <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Salvar na lista de desejos </a>
+                                <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Como isso</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="prod-box">
+                        <div class="prod-i">
+                            <img src="{$GET_TEMA}/images/tr3.png" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                            <div class="dit-t clearfix">
+                                <div class="left-ti">
+                                    <h4>Madeira Sofáplataforma</h4>
+                                    <p>Por <span>Beko</span> sob <span>Luzes</span></p>
+                                </div>
+                                <a href="#">$1220</a>
+                            </div>
+                            <div class="dit-btn clearfix">
+                                <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> salve na lista de desejos </a>
+                                <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Como isso</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="prod-box">
+                        <div class="prod-i">
+                            <img src="{$GET_TEMA}/images/tr4.png" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                            <div class="dit-t clearfix">
+                                <div class="left-ti">
+                                    <h4>Wall Sticker</h4>
+                                    <p>By <span>Beko</span> under <span>Lights</span></p>
+                                </div>
+                                <a href="#">R$1.220</a>
+                            </div>
+                            <div class="dit-btn clearfix">
+                                <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Salve na lista de desejos </a>
+                                <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Como isso</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="prod-box">
+                        <div class="prod-i">
+                            <img src="{$GET_TEMA}/images/tr1.png" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                            <div class="dit-t clearfix">
+                                <div class="left-ti">
+                                    <h4>Treehouse Bed</h4>
+                                    <p>By <span>Beko</span> under <span>Lights</span></p>
+                                </div>
+                                <a href="#">R$1.220</a>
+                            </div>
+                            <div class="dit-btn clearfix">
+                                <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> salve na lista de desejos </a>
+                                <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Como isso</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="prod-box">
+                        <div class="prod-i">
+                            <img src="{$GET_TEMA}/images/tr2.png" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                            <div class="dit-t clearfix">
+                                <div class="left-ti">
+                                    <h4>Treehouse Bed</h4>
+                                    <p>By <span>Beko</span> under <span>Lights</span></p>
+                                </div>
+                                <a href="#">R$1.220</a>
+                            </div>
+                            <div class="dit-btn clearfix">
+                                <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Salve na lista de desejos </a>
+                                <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Como isso</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="prod-box">
+                        <div class="prod-i">
+                            <img src="{$GET_TEMA}/images/tr3.png" alt="#" />
+                        </div>
+                        <div class="prod-dit clearfix">
+                            <div class="dit-t clearfix">
+                                <div class="left-ti">
+                                    <h4>Treehouse Bed</h4>
+                                    <p>By <span>Beko</span> under <span>Lights</span></p>
+                                </div>
+                                <a href="#">R$1.220</a>
+                            </div>
+                            <div class="dit-btn clearfix">
+                                <a class="wis" href="#"><i class="fa fa-star" aria-hidden="true"></i> Salve na lista de desejos </a>
+                                <a class="thi" href="#"><i class="fa fa-thumbs-up" aria-hidden="true"></i> Como isso</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-top clearfix">
+                    <div class="col-md-2 col-sm-6">
+                        <h2>Comece uma conta
+                            grátis hoje
+                        </h2>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="form-box">
+                            <input type="text" placeholder="Entre com seu e-mail" />
+                            <button>Continue</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="help-box-f">
+                            <h4>Dúvidas? Ligue para 12 34 56 78 para obter ajuda</h4>
+                            <p>Configuração fácil - sem taxas de pagamento - até 100 produtos grátis</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-link-box clearfix">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="left-f-box">
+                            <div class="col-sm-4">
+                                <h2>VENDA EM Loja do Marcelino</h2>
+                                <ul>
+                                    <li><a href="#">Crie sua conta</a></li>
+                                    <li><a href="{$GET_TEMA}/howitworks.html">Como funciona fornecedores</a></li>
+                                    <li><a href="{$GET_TEMA}/pricing.html">Preços</a></li>
+                                    <li><a href="#">FAQ para fornecedores</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <h2>Compre na Loja do Marcelino</h2>
+                                <ul>
+                                    <li><a href="#">Crie sua conta</a></li>
+                                    <li><a href="#">Como funciona para compradores</a></li>
+                                    <li><a href="#">Categories</a></li>
+                                    <li><a href="#">FAQ para compradores</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <h2>EMPRESA</h2>
+                                <ul>
+                                    <li><a href="about-us.html">Sobre a loja</a></li>
+                                    <li><a href="#">Contato</a></li>
+                                    <li><a href="#">Pressione</a></li>
+                                    <li><a href="#">Carreiras</a></li>
+                                    <li><a href="#">Termo de uso</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="right-f-box">
+                            <h2>FÁBRICA</h2>
+                            <ul class="col-sm-4">
+                                <li><a href="#">Têxteis</a></li>
+                                <li><a href="#">Mobília</a></li>
+                                <li><a href="#">cOURO</a></li>
+                                <li><a href="#">Agricultura</a></li>
+                                <li><a href="#">Comida & bebidas</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p><img width="90" src="{$GET_TEMA}/images/logo.png" alt="#" style="margin-top: -5px;" /> Todos os direitos reservados. Loja do Marcelino © 2020</p>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline socials">
+                        <li>
+                            <a href="">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="right-flag">
+                        <li><a href="#"><img src="{$GET_TEMA}/images/flag.png" alt="" /> <span>Mudar idioma</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--main js-->
+<script src="{$GET_TEMA}/js/jquery-1.12.4.min.js"></script>
+<!--bootstrap js-->
+<script src="{$GET_TEMA}/js/bootstrap.min.js"></script>
+<script src="{$GET_TEMA}/js/bootstrap-select.min.js"></script>
+<script src="{$GET_TEMA}/js/slick.min.js"></script>
+<script src="{$GET_TEMA}/js/wow.min.js"></script>
+<!--custom js-->
+<script src="{$GET_TEMA}/js/custom.js"></script>
 </body>
 </html>
