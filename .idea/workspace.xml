@@ -166,7 +166,7 @@
       <workItem from="1606336706181" duration="5202000" />
       <workItem from="1606347985111" duration="74000" />
       <workItem from="1606348101357" duration="1152000" />
-      <workItem from="1606349431081" duration="5177000" />
+      <workItem from="1606349431081" duration="5499000" />
     </task>
     <servers />
   </component>
@@ -185,7 +185,15 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="testando url" />
+    <option name="LAST_COMMIT_MESSAGE" value="testando url" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="1672" y="47" key="#Inspections" timestamp="1606358492244">
+      <screen x="1366" y="0" width="1360" height="738" />
+    </state>
+    <state x="1672" y="47" key="#Inspections/0.0.1366.738/1366.0.1360.738@1366.0.1360.738" timestamp="1606358492244" />
     <state x="1753" y="12" key="#PHP" timestamp="1606351545825">
       <screen x="1366" y="0" width="1360" height="738" />
     </state>
